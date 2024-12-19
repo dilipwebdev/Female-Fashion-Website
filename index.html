@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#shoesNike").click(function () {
+          $(".selling_products_box31").hide();
+          $(".selling_products_box32").hide();
+          $(".selling_products_box33").show();
+        });
+
+        $("#Tshirtshow").click(function () {
+          $(".selling_products_box32").hide();
+          $(".selling_products_box33").hide();
+          $(".selling_products_box31").show();
+        });
+
+        $("#pantsshow").click(function () {
+          $(".selling_products_box31").hide();
+          $(".selling_products_box33").hide();
+          $(".selling_products_box32").show();
+        });
+
+        $("#hoodieBtn").click(function () {
+          $(".selling_products_box32").hide();
+          $(".selling_products_box33").hide();
+          $(".selling_products_box31").show();
+        });
+
+        $("#outerBtn").click(function () {
+          $(".selling_products_box31").hide();
+          $(".selling_products_box32").hide();
+          $(".selling_products_box33").show();
+        });
+
+        $("#jacketBtn").click(function () {
+          $(".selling_products_box31").hide();
+          $(".selling_products_box33").hide();
+          $(".selling_products_box32").show();
+        });
+
+        $("#active").click(function () {
+          $(".selling_products_box31").show();
+          $(".selling_products_box32").show();
+          $(".selling_products_box33").show();
+        });
+
+        $("#homeLi").hover(function () {
+          $(".home-box").slideDown(500);
+        });
+
+        $("#homeLi").mouseleave(function () {
+          $(".home-box").slideUp(500);
+        });
+
+        $("#shopLi").hover(function () {
+          $(".shop-box").slideDown(800);
+        });
+
+        $("#shopLi").mouseleave(function () {
+          $(".shop-box").slideUp(900);
+        });
+
+        $("#pageLi").hover(function () {
+          $(".page-box").slideDown(800);
+        });
+
+        $("#pageLi").mouseleave(function () {
+          $(".page-box").slideUp(900);
+        });
+
+        $("#blogLi").hover(function () {
+          $(".blog-box").slideDown(800);
+        });
+
+        $("#blogLi").mouseleave(function () {
+          $(".blog-box").slideUp(900);
+        });
+      });
+    </script>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      .header-top {
+        width: 100%;
+        height: 50px;
+        /* background-color: blue; */
+      }
+
+      .header-content-box {
+        border-top: 2px solid rgb(80, 75, 75);
+        width: 100%;
+        height: 50px;
+        /* background-color: rgb(83, 226, 43); */
+        border-bottom: 2px solid rgb(80, 75, 75);
+        display: flex;
+      }
+
+      .header-heading1-box {
+        width: 33.33%;
+        height: 50px;
+        /* background-color: blue; */
+      }
+
+      .header-heading1-box h2 {
+        margin-top: 10px;
+        margin-left: 50px;
+      }
+
+      .header-heading2-box {
+        width: 54.33%;
+        height: 50px;
+      }
+
+      .header-heading2-box h2 {
+        margin-top: 10px;
+        margin-left: 50px;
+      }
+
+      .header-heading3-box {
+        width: 13%;
+        height: 50px;
+      }
+
+      .icon {
+        margin-top: 10px;
+        width: 70%;
+        height: 40px;
+        font-size: 25px;
+        cursor: pointer;
+      }
+
+      /* @media screen and(max-width:575px) {
+        .header-top,.header-content-box,{
+            width: 100%;
+        }
+
+        .header-heading1-box, {
+          width: 100%;
+
+        }
+
+        .header-heading1-box h2{
+               margin-top:  0px;
+        }
+      } */
+
+      header {
+        width: 100%;
+        height: 130px;
+        /* background-color: chartreuse; */
+        display: flex;
+      }
+
+      .logo {
+        width: 40%;
+        height: 130px;
+        /* background-color: blue; */
+      }
+
+      .logo img {
+        margin-left: 40px;
+        margin-top: 30px;
+      }
+
+      .nav {
+        width: 60%;
+        height: 130px;
+        /* background-color: blueviolet; */
+      }
+
+      .nav ul {
+        display: flex;
+        list-style: none;
+        margin-top: 50px;
+        font-size: 25px;
+      }
+      .nav ul li {
+        height: 60px;
+        margin: 10px 30px;
+        /* background-color: blueviolet; */
+      }
+      .nav ul li a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .home-box {
+        position: absolute;
+        top: 160px;
+        left: 590px;
+        width: 250px;
+        height: 130px;
+        background-color: rgb(5, 5, 5);
+        display: none;
+      }
+
+      .nav ul li a:hover {
+        color: rgb(54, 29, 198);
+      }
+
+      /* .nav ul li:hover .home-box {
+        display: block;
+      } */
+
+      .home-box h4 {
+        margin-left: 20px;
+        color: #fff;
+      }
+
+      .shop-box {
+        position: absolute;
+        top: 160px;
+        left: 870px;
+        width: 250px;
+        height: 450px;
+        background-color: rgb(5, 5, 5);
+        display: none;
+      }
+
+      .shop-box h4 {
+        margin-left: 20px;
+        color: #fff;
+      }
+
+      /* .nav ul li:hover .shop-box {
+        display: block;
+      } */
+
+      .page-box {
+        position: absolute;
+        top: 160px;
+        left: 990px;
+        width: 250px;
+        height: 400px;
+        background-color: rgb(5, 5, 5);
+        display: none;
+      }
+
+      .page-box h4 {
+        margin-left: 20px;
+        color: #fff;
+      }
+
+      /* .nav ul li:hover .page-box {
+        display: block;
+      } */
+
+      .blog-box {
+        position: absolute;
+        top: 160px;
+        left: 1150px;
+        width: 290px;
+        height: 250px;
+        background-color: rgb(5, 5, 5);
+        display: none;
+      }
+
+      .blog-box h4 {
+        margin-left: 20px;
+        color: #fff;
+      }
+
+      /* .nav ul li:hover .blog-box {
+        display: block;
+      } */
+
+      .bannar-box {
+        width: 100%;
+        height: 800px;
+        /* background-color: aqua; */
+        background-image: url("Female img/banner1.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding-top: 130px;
+      }
+
+      /* @media screen and(max-width:575px){
+        .bannar-box{
+           width: 575px;
+
+        }
+
+      } */
+                      
+        
+      
+
+      .main-bannar-box {
+        margin-left: 60px;
+        width: 50%;
+        height: 500px;
+        /* background-color: blue; */
+      }
+
+      .main-bannar-box h1 {
+        font-size: 130px;
+      }
+
+      .shop-now-btn {
+        width: 100%;
+        height: 90px;
+      }
+
+      .shop-now-btn button {
+        margin-top: 20px;
+        /* margin-left: 50px; */
+        padding: 20px 50px;
+      }
+      #btn1 {
+        position: absolute;
+        top: 550px;
+        left: 0px;
+        width: 50px;
+        height: 40px;
+        background-color: rgb(164, 193, 193);
+      }
+
+      #btn2 {
+        position: absolute;
+        top: 550px;
+        left: 1465px;
+        width: 50px;
+        height: 40px;
+        background-color: rgb(164, 193, 193);
+      }
+
+      .bannar-box1 {
+        width: 100%;
+        height: 800px;
+        /* background-color: aqua; */
+        background-image: url("Female img/banner2.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding-top: 130px;
+        position: absolute;
+        top: 180px;
+        left: 0px;
+        z-index: -1;
+      }
+
+      .main-bannar-box1 {
+        margin-left: 60px;
+        width: 50%;
+        height: 500px;
+        /* background-color: blue; */
+      }
+
+      .main-bannar-box1 h1 {
+        font-size: 130px;
+      }
+
+      .shop-now-btn1 {
+        width: 100%;
+        height: 90px;
+      }
+
+      .shop-now-btn1 button {
+        margin-top: 20px;
+        /* margin-left: 50px; */
+        padding: 20px 50px;
+      }
+      #btn3 {
+        position: absolute;
+        top: 390px;
+        left: 0px;
+        width: 50px;
+        height: 40px;
+        background-color: rgb(164, 193, 193);
+      }
+
+      #btn4 {
+        position: absolute;
+        top: 390px;
+        left: 1465px;
+        width: 50px;
+        height: 40px;
+        background-color: rgb(164, 193, 193);
+      }
+
+      .featured_box {
+        width: 100%;
+        height: 900px;
+        /* background-color: blue; */
+        /* padding-top: 50px; */
+      }
+
+      .featured_boxA {
+        width: 100%;
+        height: 300px;
+        /* background-color: cadetblue; */
+        padding-top: 210px;
+        /* font-size: 50px; */
+      }
+
+      .featured_boxA h1 {
+        font-size: 45px;
+        margin-left: 60px;
+      }
+
+      .featured_boxA h2 {
+        margin-left: 1310px;
+        margin-top: -40px;
+      }
+
+      .featured_boxA h2 a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .featured_boxA h2 a:hover {
+        color: rgb(170, 226, 227);
+      }
+
+      .featured_boxB {
+        width: 100%;
+        height: 600px;
+        /* background-color: aqua; */
+      }
+
+      .featured_boxC {
+        width: 100%;
+        height: 550px;
+        /* background-color: brown; */
+      }
+      .featured_boxD {
+        margin-left: 60px;
+        width: 95%;
+        height: 550px;
+        /* background-color: cadetblue; */
+        display: flex;
+      }
+
+      .featureda {
+        width: 25%;
+        height: 460px;
+        /* background-color: aqua; */
+      }
+
+      .featureda h1 {
+        margin-top: 30px;
+        font-size: 30px;
+      }
+
+      .featureda h1 a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .featureda h1 a:hover {
+        color: rgb(29, 239, 250);
+      }
+
+      .featureda img {
+        margin-top: 10px;
+        margin-left: 5px;
+        width: 350px;
+        border-radius: 10px;
+        border: 2px solid rgb(212, 197, 197);
+      }
+
+      .featuredb {
+        width: 25%;
+        height: 460px;
+      }
+
+      .featuredb h1 {
+        margin-top: 30px;
+        font-size: 30px;
+      }
+
+      .featuredb h1 a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .featuredb h1 a:hover {
+        color: rgb(29, 239, 250);
+      }
+
+      .featuredb img {
+        margin-top: 10px;
+        margin-left: 5px;
+        width: 350px;
+        border-radius: 10px;
+        border: 2px solid rgb(212, 197, 197);
+      }
+
+      .featuredc {
+        width: 25%;
+        height: 460px;
+      }
+
+      .featuredc h1 {
+        margin-top: 30px;
+        font-size: 30px;
+      }
+
+      .featuredc h1 a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .featuredc h1 a:hover {
+        color: rgb(29, 239, 250);
+      }
+
+      .featuredc img {
+        margin-top: 10px;
+        margin-left: 5px;
+        width: 350px;
+        border-radius: 10px;
+        border: 2px solid rgb(212, 197, 197);
+      }
+
+      .featuredd {
+        width: 25%;
+        height: 460px;
+      }
+
+      .featuredd h1 {
+        margin-top: 30px;
+        font-size: 30px;
+      }
+
+      .featuredd h1 a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .featuredd h1 a:hover {
+        color: rgb(29, 239, 250);
+      }
+
+      .featuredd img {
+        margin-top: 10px;
+        margin-left: 5px;
+        width: 350px;
+        border-radius: 10px;
+        border: 2px solid rgb(212, 197, 197);
+      }
+
+      .casual_collection {
+        width: 100%;
+        height: 800px;
+        /* background-color: aqua; */
+        display: flex;
+      }
+
+      .casual_collection_box1 {
+        width: 50%;
+        height: 800px;
+        /* background-color: blue; */
+      }
+
+      .casual_collection_img1 {
+        margin: 70px 30px;
+        width: 95%;
+        height: 700px;
+        /* background-color: brown; */
+      }
+
+      .casual_collection_img1 img {
+        width: 720px;
+        height: 700px;
+        border-radius: 20px;
+      }
+
+      .casual_collection_content {
+        width: 70%;
+        height: 600px;
+        /* background-color: rgb(193, 193, 210); */
+        position: relative;
+        top: -700px;
+        left: 210px;
+      }
+
+      .casual_collection_content h3 {
+        /* margin-left: 190px; */
+        position: relative;
+        top: 120px;
+        left: 190px;
+      }
+
+      .casual_collection_content a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .casual_collection_content h2 {
+        margin-left: 190px;
+      }
+
+      .casual_collection_content a:hover {
+        color: rgb(20, 154, 154);
+      }
+
+      .casual_collection_box2 {
+        width: 50%;
+        height: 800px;
+        /* background-color: rgb(115, 115, 180); */
+      }
+
+      .casual_collection_img2 {
+        margin: 70px 30px;
+        width: 90%;
+        height: 350px;
+        /* background-color: aqua; */
+      }
+
+      .casual_collection_img2 img {
+        width: 650px;
+        border-radius: 20px;
+        /* margin-top: -140px; */
+      }
+
+      .casual_collection_content2 {
+        width: 50%;
+        height: 250px;
+        /* background-color: rgb(193, 193, 210); */
+        position: relative;
+        top: -240px;
+        left: 100px;
+      }
+
+      .casual_collection_content2 a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .casual_collection_content2 a:hover {
+        color: rgb(20, 154, 154);
+      }
+
+      .casual_collection_img3 {
+        margin: -40px 30px;
+        width: 90%;
+        height: 350px;
+        /* background-color: aqua; */
+      }
+
+      .casual_collection_img3 img {
+        width: 650px;
+        border-radius: 20px;
+      }
+
+      .discount_box {
+        width: 100%;
+        height: 600px;
+        /* background-color: aqua; */
+        padding-top: 90px;
+      }
+
+      .discount_box1 {
+        margin-left: 30px;
+        width: 90%;
+        height: 450px;
+        /* background-color: blue; */
+      }
+
+      .discount_box1 h1 {
+        font-size: 60px;
+      }
+
+      .discount_box1 p {
+        font-size: 25px;
+      }
+
+      #discountBtn1 {
+        width: 650px;
+        height: 70px;
+        padding-left: 20px;
+        font-size: 25px;
+        border: 2px solid rgb(169, 159, 159);
+      }
+
+      #discountBtn2 {
+        width: 170px;
+        height: 70px;
+        background-color: black;
+        font-weight: 900;
+      }
+
+      #discountBtn2 a {
+        text-decoration: none;
+        color: white;
+      }
+
+      #discountBtn2:hover {
+        background-color: rgb(223, 27, 27);
+      }
+
+      input::placeholder {
+        font-size: 25px;
+        font-weight: 600;
+      }
+
+      .selling_products_box {
+        width: 100%;
+        height: 1900px;
+        /* background-color: aqua; */
+        padding-top: 50px;
+      }
+
+      .selling_products_box1 {
+        margin-left: 30px;
+        width: 90%;
+        height: 70px;
+        /* background-color: brown; */
+      }
+      .selling_products_box1 h1 {
+        font-size: 50px;
+      }
+
+      .selling_products_box2 {
+        margin-left: 0px;
+        width: 90%;
+        height: 28px;
+        /* background-color: blueviolet; */
+      }
+
+      .selling_products_box2 ul {
+        display: flex;
+        list-style: none;
+        font-size: 25px;
+      }
+
+      .selling_products_box2 ul li {
+        margin-left: 0px;
+        padding-left: 40px;
+        /* padding-top: 30px; */
+        /* background-color: rgb(134, 167, 167); */
+      }
+
+      .selling_products_box2 ul li a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+      }
+
+      .selling_products_box2 ul li a:hover {
+        color: rgb(56, 14, 241);
+      }
+
+      /* .selling_product_main{
+         width: 100%;
+         height: 1700px;
+         background-color: cadetblue;
+      } */
+
+      .selling_products_box31 {
+        margin-left: 30px;
+        width: 95%;
+        height: 510px;
+        /* background-color: rgb(42, 75, 165); */
+        display: flex;
+      }
+
+      .selling_products_box32 {
+        margin-left: 30px;
+        width: 95%;
+        height: 510px;
+        /* background-color: brown; */
+        display: flex;
+      }
+      .selling_products_box33 {
+        margin-left: 30px;
+        width: 95%;
+        height: 510px;
+        /* background-color: rgb(165, 147, 42); */
+        display: flex;
+      }
+
+      .selling_products_t1 {
+        width: 23.75%;
+        height: 500px;
+        /* background-color: blue; */
+      }
+
+      .selling_products_t1 img {
+        width: 95%;
+        border-radius: 10px;
+        margin-left: 0px;
+        border: 2px solid rgb(212, 197, 197);
+      }
+
+      .selling_products_t1 h1 {
+        font-size: 35px;
+      }
+
+      .selling_products_t2 {
+        width: 23.75%;
+        height: 500px;
+        /* background-color: blue; */
+      }
+
+      .selling_products_t2 img {
+        width: 95%;
+        border-radius: 10px;
+        margin-left: 0px;
+        border: 2px solid rgb(212, 197, 197);
+      }
+
+      .selling_products_t2 h1 {
+        font-size: 35px;
+      }
+
+      .selling_products_t3 {
+        width: 23.75%;
+        height: 500px;
+        /* background-color: blue; */
+      }
+
+      .selling_products_t3 img {
+        width: 95%;
+        border-radius: 10px;
+        margin-left: 0px;
+        border: 2px solid rgb(212, 197, 197);
+      }
+
+      .selling_products_t3 h1 {
+        font-size: 35px;
+      }
+
+      .selling_products_t4 {
+        width: 23.75%;
+        height: 500px;
+        /* background-color: blue; */
+      }
+
+      .selling_products_t4 img {
+        width: 95%;
+        border-radius: 10px;
+        margin-left: 0px;
+        border: 2px solid rgb(212, 197, 197);
+      }
+
+      .selling_products_t4 h1 {
+        font-size: 35px;
+      }
+
+      .flash_sales_box {
+        width: 100%;
+        height: 750px;
+        /* background-color: aqua; */
+      }
+
+      .flash_sales_box1 {
+        width: 100%;
+        height: 90px;
+        /* background-color: blueviolet; */
+      }
+
+      .flash_sales_box1 h1 {
+        font-size: 60px;
+        font-weight: 900;
+        color: rgb(12, 206, 44);
+        margin-left: 600px;
+      }
+
+      .flash_sales_box2 {
+        width: 100%;
+        height: 570px;
+        /* background-color: cadetblue; */
+        padding: 20px 0px;
+      }
+
+      .flash_sales_imgBox {
+        margin-left: 40px;
+        width: 95%;
+        height: 520px;
+        /* background-color: brown; */
+      }
+
+      .flash_sales_imgBox1 {
+        float: left;
+        width: 25%;
+        height: 510px;
+        /* background-color: aqua; */
+      }
+
+      .flash_sales_imgBox1 img {
+        width: 95%;
+        margin-left: 10px;
+      }
+
+      .flash_sales_imgBox1 img:hover {
+        transition: 0.5s;
+        transform: scale(0.9);
+      }
+
+      .flash_sales_imgBox1 h1 {
+        font-size: 30px;
+      }
+
+      .flash_sales_imgBox2 {
+        float: left;
+        width: 25%;
+        height: 510px;
+        /* background-color: aqua; */
+      }
+
+      .flash_sales_imgBox2 img {
+        width: 95%;
+        margin-left: 10px;
+      }
+
+      .flash_sales_imgBox2 img:hover {
+        transition: 0.5s;
+        transform: scale(0.9);
+      }
+
+      .flash_sales_imgBox2 h1 {
+        font-size: 30px;
+      }
+
+      .flash_sales_imgBox3 {
+        float: left;
+        width: 25%;
+        height: 510px;
+        /* background-color: aqua; */
+      }
+
+      .flash_sales_imgBox3 img {
+        width: 95%;
+        margin-left: 10px;
+      }
+
+      .flash_sales_imgBox3 img:hover {
+        transition: 0.5s;
+        transform: scale(0.9);
+      }
+
+      .flash_sales_imgBox3 h1 {
+        font-size: 30px;
+      }
+
+      .flash_sales_imgBox4 {
+        float: left;
+        width: 25%;
+        height: 510px;
+        /* background-color: aqua; */
+      }
+
+      .flash_sales_imgBox4 img {
+        width: 95%;
+        margin-left: 10px;
+      }
+
+      .flash_sales_imgBox4 img:hover {
+        transition: 0.5s;
+        transform: scale(0.9);
+      }
+
+      .flash_sales_imgBox4 h1 {
+        font-size: 30px;
+      }
+
+      .drnim_collection_main {
+        width: 100%;
+        height: 900px;
+        /* background-color: brown; */
+      }
+      .drnim_collection_img {
+        margin-left: 40px;
+        width: 95%;
+        height: 700px;
+        /* background-color: aqua; */
+        background-image: url("Female img/model.jpg");
+        background-size: cover;
+        border-radius: 20px;
+      }
+
+      .collection_selling_content {
+        margin-left: 690px;
+        padding-top: 150px;
+        width: 50%;
+        height: 650px;
+        /* background-color: blue; */
+      }
+
+      .collection_selling_content h1 {
+        font-size: 90px;
+      }
+
+      .collection_selling_content p {
+        font-size: 21px;
+      }
+
+      .collection_selling_content button {
+        padding: 15px 40px;
+        font-size: 25px;
+      }
+
+      .follow_box {
+        width: 100%;
+        height: 500px;
+        background-color: #b3a4a8;
+        padding-top: 30px;
+      }
+
+      .follow_box1 {
+        width: 100%;
+        height: 90px;
+        /* background-color: aqua; */
+      }
+
+      .follow_box1 h1 {
+        font-size: 70px;
+        margin-left: 30px;
+        /* color: chocolate; */
+      }
+
+      .follow_box2 {
+        width: 100%;
+        height: 50px;
+        /* background-color: aqua; */
+      }
+
+      .follow_box2 h2 {
+        margin-left: 30px;
+      }
+
+      .follow_box3 {
+        width: 100%;
+        height: 250px;
+        /* background-color: aqua; */
+        /* margin-top: -80px; */
+      }
+
+      .follow1 {
+        float: left;
+        width: 16.66%;
+        height: 250px;
+        background-image: url("Female img/insta-image1.jpg");
+        border-radius: 50px;
+        background-repeat: no-repeat;
+        /* background-color: black; */
+      }
+
+      /* .follow1:hover .ri-instagram-line {
+        transform: scale(1.2);
+        display: block;
+        transition: 1s;
+        background-color: rgb(189, 181, 181);
+      } */
+
+      .follow2 {
+        float: left;
+        width: 16.66%;
+        height: 250px;
+        background-repeat: no-repeat;
+
+        background-image: url("Female img/insta-image2.jpg");
+        border-radius: 50px;
+      }
+
+      .follow3 {
+        float: left;
+        width: 16.66%;
+        height: 250px;
+        background-repeat: no-repeat;
+
+        background-image: url("Female img/insta-image3.jpg");
+        border-radius: 50px;
+      }
+
+      .follow4 {
+        float: left;
+        width: 16.66%;
+        height: 250px;
+        background-repeat: no-repeat;
+
+        background-image: url("Female img/insta-image4.jpg");
+        border-radius: 50px;
+      }
+
+      .follow5 {
+        float: left;
+        width: 16.66%;
+        height: 250px;
+        background-repeat: no-repeat;
+
+        background-image: url("Female img/insta-image5.jpg");
+        border-radius: 50px;
+      }
+
+      .follow6 {
+        float: left;
+        width: 16.66%;
+        height: 250px;
+        background-repeat: no-repeat;
+        background-image: url("Female img/insta-image4.jpg");
+        border-radius: 50px;
+      }
+
+      #homeLi {
+        /* background-color: aqua; */
+        width: 90px;
+        height: 40px;
+        /* margin-left: -30px; */
+      }
+
+      #shopLi {
+        /* background-color: aqua; */
+        width: 90px;
+        height: 40px;
+      }
+
+      #pageLi {
+        /* background-color: aqua; */
+        width: 90px;
+        height: 40px;
+      }
+
+      #blogLi {
+        /* background-color: aqua; */
+        width: 90px;
+        height: 40px;
+      }
+
+      .insta_icon {
+       
+        position: relative;
+        top: 100px;
+        left: 100px;
+        font-size: 60px;
+        display: none;
+
+      }
+
+      .follow1:hover {
+        transition: 1s;
+        transform: scale(.9);
+        filter: drop-shadow(10px 70px 10px rgb(32, 31, 31));
+      }
+
+       .follow2:hover{
+        transition: 1s;
+        transform: scale(.9);
+        filter: drop-shadow(10px 70px 10px rgb(32, 31, 31));
+      } 
+      .follow3:hover{
+        transition: 1s;
+        transform: scale(.9);
+        filter: drop-shadow(10px 70px 10px rgb(32, 31, 31));
+      }
+      .follow4:hover{
+        transition: 1s;
+        transform: scale(.9);
+        filter: drop-shadow(10px 70px 10px rgb(32, 31, 31));
+      }
+      .follow5:hover{
+        transition: 1s;
+        transform: scale(.9);
+        filter: drop-shadow(10px 70px 10px rgb(32, 31, 31));
+      } 
+      /* .follow6:hover{
+        transition: 1s;
+        transform: scale(.9);
+        filter: drop-shadow(0px 50px 10px rgb(32, 31, 31));
+      }  */
+
+      .follow1:hover .insta_icon{
+        display: block;
+      }
+      .follow2:hover .insta_icon{
+        display: block;
+      }
+       .follow3:hover .insta_icon{
+        display: block;
+      }
+      .follow4:hover .insta_icon{
+        display: block;
+      }
+      .follow5:hover .insta_icon{
+        display: block;
+      }
+      /* .follow6:hover .insta_icon{
+        display: block;
+      } */
+
+
+      .footer_box{
+        width: 100%;
+        height: 600px;
+        /* background-color: blueviolet; */
+        padding-top: 40px;
+      }
+
+      .footer_box1{
+        margin-left: 30px;
+        width: 95%;
+        height: 400px;
+        /* background-color: blue; */
+        display: flex;
+      }
+
+      .footer_boxA{
+             width: 25%;
+             height: 400px;
+             /* background-color: rgb(202, 227, 227); */
+      }
+
+      .footer_heading1{
+        margin-top: 30px;
+         margin-left: 20px;
+         width: 90%;
+         height: 350px;
+         /* background-color: burlywood; */
+      }
+
+      .footer_boxB{
+             width: 25%;
+             height: 400px;
+             /* background-color: rgb(202, 227, 227); */
+      }
+
+      .footer_heading2{
+        margin-top: 30px;
+         margin-left: 20px;
+         width: 90%;
+         height: 350px;
+         /* background-color: burlywood; */
+      }
+
+     .footer_boxC{
+             width: 25%;
+             height: 400px;
+             /* background-color: rgb(202, 227, 227); */
+      }
+
+      .footer_heading3{
+        margin-top: 30px;
+         margin-left: 20px;
+         width: 90%;
+         height: 350px;
+         /* background-color: burlywood; */
+      }
+
+      .footer_boxD{
+             width: 25%;
+             height: 400px;
+             /* background-color: rgb(202, 227, 227); */
+      }
+
+      .footer_heading4{
+        margin-top: 30px;
+         margin-left: 20px;
+         width: 90%;
+         height: 350px;
+         /* background-color: burlywood; */
+      }
+     
+    </style>
+  </head>
+
+  <body>
+    <div class="header-top">
+      <div class="header-content-box">
+        <div class="header-heading1-box">
+          <h2>Let's talk! +57 444 11 00 35</h2>
+        </div>
+
+        <div class="header-heading2-box">
+          <h2>Free shipping on a purchase value of $200</h2>
+        </div>
+
+        <div class="header-heading3-box">
+          <div class="icon">
+            <i class="ri-user-line"></i>
+            <i class="ri-shopping-cart-line"></i>
+            <i class="ri-heart-line"></i>
+            <i class="ri-search-line"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="logo">
+        <img src="Female img/main-logo.png" alt="" />
+      </div>
+
+      <div class="nav">
+        <ul>
+          <li id="homeLi">
+            <a href="">Home<i class="ri-arrow-down-s-line"></i></a>
+            <div class="home-box">
+              <h4>Home</h4>
+              <br />
+              <h4>Home V2(PRO)</h4>
+            </div>
+          </li>
+          <li><a href="">About</a></li>
+          <li>
+            <a href="" id="shopLi"
+              >Shop <i class="ri-arrow-down-s-line"></i>
+            </a>
+            <div class="shop-box">
+              <h4>Shop</h4>
+              <br />
+              <h4>Shop Slider(PRO)</h4>
+              <br />
+              <h4>Shop Grid(PRO)</h4>
+              <br />
+              <h4>Shop List(PRO)</h4>
+              <br />
+              <h4>Single Product(PRO)</h4>
+              <br />
+              <h4>Cart(PRO)</h4>
+              <br />
+              <h4>Wishlist(PRO)</h4>
+              <br />
+              <h4>Check(PRO)</h4>
+              <br />
+            </div>
+          </li>
+
+          <li>
+            <a href="" id="pageLi">Pages<i class="ri-arrow-down-s-line"></i></a>
+
+            <div class="page-box">
+              <h4>Coming Soon(PRO)</h4>
+              <br />
+              <h4>Login(PRO)</h4>
+              <br />
+              <h4>FAQs(PRO)</h4>
+              <br />
+              <h4>Styles</h4>
+              <br />
+              <h4>Thankyou</h4>
+              <br />
+              <h4>Error Page(PRO)</h4>
+              <br />
+            </div>
+          </li>
+
+          <li>
+            <a href="" id="blogLi">Blog<i class="ri-arrow-down-s-line"></i></a>
+            <div class="blog-box">
+              <h4>Blog</h4>
+              <br />
+              <h4>Blog With Sidebar(PRO)</h4>
+              <br />
+              <h4>Blog Masonry(PRO)</h4>
+              <br />
+              <h4>Single Post</h4>
+              <br />
+            </div>
+          </li>
+
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="bannar-box">
+      <button id="btn1"><i class="ri-arrow-left-s-line"></i></button>
+      <button id="btn2"><i class="ri-arrow-right-s-line"></i></button>
+
+      <div class="main-bannar-box">
+        <h1>
+          Summer <br />
+          Collection
+        </h1>
+        <br />
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit possimus?
+          Culpa consequuntur <br />
+          saepe quasi Nostrum impedit neque ut sunt .
+        </p>
+        <br />
+        <div class="shop-now-btn">
+          <button>SHOP IT NOW<i class="ri-arrow-right-line"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bannar-box1">
+      <button id="btn3"><i class="ri-arrow-left-s-line"></i></button>
+      <button id="btn4"><i class="ri-arrow-right-s-line"></i></button>
+
+      <div class="main-bannar-box1">
+        <h1>
+          Casual <br />
+          Collection
+        </h1>
+        <br />
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit possimus?
+          Culpa consequuntur <br />
+          saepe quasi Nostrum impedit neque ut sunt .
+        </p>
+        <br />
+        <div class="shop-now-btn1">
+          <button>SHOP IT NOW<i class="ri-arrow-right-line"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="featured_box">
+        <div class="featured_boxA">
+          <h1>Featured Products</h1>
+          <h2>
+            <a href="">View All Products<i class="ri-arrow-right-line"></i></a>
+          </h2>
+        </div>
+
+        <div class="featured_boxB">
+          <div class="featured_boxC">
+            <div class="featured_boxD">
+              <div class="featureda">
+                <img src="Female img/product-item1.jpg" alt="" />
+                <h1>
+                  <a href=""
+                    >Full Sleeve Cover Shirt <br />
+                    <span style="color: rgb(56, 215, 221)">$40.00</span></a
+                  >
+                </h1>
+              </div>
+
+              <div class="featuredb">
+                <img src="Female img/product-item2.jpg" alt="" />
+                <h1>
+                  <a href=""
+                    >Volunteer Half Blue <br />
+                    <span style="color: rgb(56, 215, 221)">$38.00</span></a
+                  >
+                </h1>
+              </div>
+
+              <div class="featuredc">
+                <img src="Female img/product-item3.jpg" alt="" />
+                <h1>
+                  <a href=""
+                    >Double Yellow Shirt <br /><span
+                      style="color: rgb(56, 215, 221)"
+                      >$44.00</span
+                    ></a
+                  >
+                </h1>
+              </div>
+
+              <div class="featuredd">
+                <img src="Female img/product-item4.jpg" alt="" />
+                <h1>
+                  <a href=""
+                    >Long Belly Grey Pant<br /><span
+                      style="color: rgb(56, 215, 221)"
+                      >$33.00</span
+                    ></a
+                  >
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="casual_collection">
+        <div class="casual_collection_box1">
+          <div class="casual_collection_img1">
+            <img src="Female img/collection-item1.jpg" alt="" />
+          </div>
+
+          <div class="casual_collection_content">
+            <h3>CASUAL COLLECTION</h3>
+            <br />
+            <h1
+              style="
+                font-size: 80px;
+                font-weight: 900;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+                margin-left: 180px;
+                margin-top: 130px;
+              "
+            >
+              Street <br />
+              Wear.
+            </h1>
+            <br />
+            <p style="margin-left: 190px; font-size: 21px">
+              Lorem ipsum dolor sit amet, <br />
+              consectetur adipiscing elit. <br />Dignissim massa diam elementum.
+            </p>
+            <br />
+            <br />
+
+            <a href=""
+              ><h2>Shop Collection <i class="ri-arrow-right-line"></i></h2
+            ></a>
+          </div>
+        </div>
+
+        <div class="casual_collection_box2">
+          <div class="casual_collection_img2">
+            <img src="Female img/collection-item2.jpg" alt="" />
+
+            <div class="casual_collection_content2">
+              <h3>BASIC COLLECTION</h3>
+              <br />
+              <h1
+                style="
+                  font-size: 50px;
+                  font-weight: 900;
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Basic <br />
+                Shoes.
+              </h1>
+              <br />
+              <a href=""
+                ><h2>Shop collection <i class="ri-arrow-right-line"></i></h2
+              ></a>
+            </div>
+          </div>
+
+          <div class="casual_collection_img3">
+            <img src="Female img/collection-item3.jpg" alt="" />
+
+            <div class="casual_collection_content2">
+              <h3>BEST SELLING PRODUCT</h3>
+              <br />
+              <h1
+                style="
+                  font-size: 50px;
+                  font-weight: 900;
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Woolen <br />
+                Hat..
+              </h1>
+              <br />
+              <a href=""
+                ><h2>Shop collection <i class="ri-arrow-right-line"></i></h2
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="discount_box">
+        <div class="discount_box1">
+          <h1>Get 25% Off Discount Coupons</h1>
+          <br />
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictumst
+            amet, metus, sit massa posuere maecenas. At tellus ut nunc amet vel
+            <br />
+            egestas.
+          </p>
+          <br /><br />
+          <input
+            type="text"
+            id="discountBtn1"
+            placeholder="Enter your email addresss here"
+          /><button id="discountBtn2"><a href="">SUBSCRIBE NOW</a></button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="selling_products_box">
+        <div class="selling_products_box1">
+          <h1>Best Selling Products</h1>
+        </div>
+        <br />
+
+        <div class="selling_products_box2">
+          <ul>
+            <li><a id="active">All</a></li>
+            <li><a id="shoesNike">Shoes</a></li>
+            <li><a id="Tshirtshow">Tshirts</a></li>
+            <li><a id="pantsshow">Pants</a></li>
+            <li><a id="hoodieBtn">Hoodie</a></li>
+            <li><a id="outerBtn">Outer</a></li>
+            <li><a id="jacketBtn">Jackets</a></li>
+            <li><a>Accessories</a></li>
+          </ul>
+        </div>
+        <br />
+
+        <!-- <div class="selling_product_main"> -->
+
+        <div class="selling_products_box31">
+          <div class="selling_products_t1">
+            <img src="Female img/selling-products1.jpg" alt="" />
+            <h1>
+              Half Sleeve T-Shirt <br />
+              <span style="color: rgb(56, 215, 221)">$40.00</span>
+            </h1>
+          </div>
+
+          <div class="selling_products_t2">
+            <img src="Female img/selling-products2.jpg" alt="" />
+
+            <h1>
+              Stylish Grey T-Shirt <br />
+              <span style="color: rgb(56, 215, 221)">$35.00</span>
+            </h1>
+          </div>
+
+          <div class="selling_products_t3">
+            <img src="Female img/selling-products3.jpg" alt="" />
+
+            <h1>
+              Silk White T-Shirt <br />
+              <span style="color: rgb(56, 215, 221)">$35.00</span>
+            </h1>
+          </div>
+
+          <div class="selling_products_t4">
+            <img src="Female img/selling-products4.jpg" alt="" />
+
+            <h1>
+              Grunge Hoodie <br />
+              <span style="color: rgb(56, 215, 221)">$30.00</span>
+            </h1>
+          </div>
+        </div>
+
+        <div class="selling_products_box32">
+          <div class="selling_products_t1">
+            <img src="Female img/selling-products5.jpg" alt="" />
+            <h1>
+              Full Sleeve Jeans <br />
+              <span style="color: rgb(56, 215, 221)">$40.00</span>
+            </h1>
+          </div>
+
+          <div class="selling_products_t2">
+            <img src="Female img/selling-products6.jpg" alt="" />
+
+            <h1>
+              Grey Check Coat <br />
+              <span style="color: rgb(56, 215, 221)">$30.00</span>
+            </h1>
+          </div>
+
+          <div class="selling_products_t3">
+            <img src="Female img/selling-products7.jpg" alt="" />
+
+            <h1>
+              Long Sleeve T-Shirt <br />
+              <span style="color: rgb(56, 215, 221)">$40.00</span>
+            </h1>
+          </div>
+
+          <div class="selling_products_t4">
+            <img src="Female img/selling-products8.jpg" alt="" />
+
+            <h1>
+              Half Sleeve T-Shirt<br />
+              <span style="color: rgb(56, 215, 221)">$35.00</span>
+            </h1>
+          </div>
+        </div>
+
+        <div class="selling_products_box33">
+          <div class="selling_products_t1">
+            <img src="Female img/selling-products13.jpg" alt="" />
+            <h1>
+              Orange White Nike <br />
+              <span style="color: rgb(56, 215, 221)">$60.00</span>
+            </h1>
+          </div>
+
+          <div class="selling_products_t2">
+            <img src="Female img/selling-products14.jpg" alt="" />
+
+            <h1>
+              Running Shoe <br />
+              <span style="color: rgb(56, 215, 221)">$50.00</span>
+            </h1>
+          </div>
+
+          <div class="selling_products_t3">
+            <img src="Female img/selling-products15.jpg" alt="" />
+
+            <h1>
+              Tennis Shoe <br />
+              <span style="color: rgb(56, 215, 221)">$80.00</span>
+            </h1>
+          </div>
+
+          <div class="selling_products_t4">
+            <img src="Female img/selling-products16.jpg" alt="" />
+
+            <h1>
+              Nike Brand shoe<br />
+              <span style="color: rgb(56, 215, 221)">$90.00</span>
+            </h1>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+
+      <!-- <div class="shoes_box">
+          <div class="shoes_box_img1">
+            <img src="Female img/selling-products13.jpg" alt="" />
+            <h1>
+              Orange White Nike <br />
+              <span style="color: rgb(56, 215, 221)">$60.00</span>
+            </h1>
+          </div>
+
+          <div class="shoes_box_img2">
+            <img src="Female img/selling-products14.jpg" alt="" />
+
+            <h1>
+              Running Shoe <br />
+              <span style="color: rgb(56, 215, 221)">$50.00</span>
+            </h1>
+          </div>
+
+          <div class="shoes_box_img3">
+            <img src="Female img/selling-products15.jpg" alt="" />
+
+            <h1>
+              Tennis Shoe <br />
+              <span style="color: rgb(56, 215, 221)">$80.00</span>
+            </h1>
+          </div>
+
+          <div class="shoes_box_img4">
+            <img src="Female img/selling-products16.jpg" alt="" />
+
+            <h1>
+              Nike Brand shoe<br />
+              <span style="color: rgb(56, 215, 221)">$90.00</span>
+            </h1>
+          </div>
+        </div> -->
+    </section>
+
+    <section>
+      <div class="flash_sales_box">
+        <div class="flash_sales_box1">
+          <h1>Flash Sales</h1>
+        </div>
+
+        <div class="flash_sales_box2">
+          <div class="flash_sales_imgBox">
+            <div class="flash_sales_imgBox1">
+              <img src="Female img/selling-products9.jpg" alt="" />
+              <h1>
+                Full Sleeve Cover Shirt <br />
+                <s>$45.00</s> $40.00
+              </h1>
+            </div>
+
+            <div class="flash_sales_imgBox2">
+              <img src="Female img/selling-products10.jpg" alt="" />
+              <h1>
+                Long Sleeve T-Shirt <br />
+                <s>$50.00</s> $40.00
+              </h1>
+            </div>
+
+            <div class="flash_sales_imgBox3">
+              <img src="Female img/selling-products11.jpg" alt="" />
+              <h1>
+                Grey Check Coat <br />
+                <s> $55.00</s> $45.00
+              </h1>
+            </div>
+
+            <div class="flash_sales_imgBox4">
+              <img src="Female img/selling-products12.jpg" alt="" />
+              <h1>
+                Silk White Shirt <br />
+                <s>$50.00</s> $30.00
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="drnim_collection_main">
+        <div class="drnim_collection_img">
+          <div class="collection_selling_content">
+            <h2>DENIM COLLECTION</h2>
+            <br />
+            <br />
+            <h1>The Casual <br />Selection.</h1>
+            <br />
+            <br />
+
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+              earum <br />praesentium et facere incidunt cum deleniti, dolor
+              rerum similique a <br />maxime ab quasi quod non?
+            </p>
+            <br /><br />
+
+            <button>Shop collection<i class="ri-arrow-right-line"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="follow_box">
+        <div class="follow_box1">
+          <h1>Follow Our Instagram</h1>
+        </div>
+        <br />
+        <div class="follow_box2">
+          <h2>
+            Our official Instagram account
+            <span style="color: blue">@ultras</span> or
+            <span style="color: blue">#ultras_clothing</span>
+          </h2>
+        </div>
+
+        <div class="follow_box3">
+          
+          <div class="follow1">
+            <div class="insta_icon">
+
+            <i class="ri-instagram-line"></i>
+            </div>
+
+          </div>
+
+          <div class="follow2">
+            <div class="insta_icon">
+              <i class="ri-instagram-line"></i></div>
+            </div>
+
+
+          
+
+          <div class="follow3">
+            <div class="insta_icon">
+              <i class="ri-instagram-line"></i></div>
+            </div>
+        
+
+          <div class="follow4">
+            <div class="insta_icon">
+              <i class="ri-instagram-line"></i></div>
+            </div>
+          
+
+          <div class="follow5">
+            <div class="insta_icon">
+              <i class="ri-instagram-line"></i></div>
+            </div>
+          
+
+          <div class="follow6">
+            <div class="insta_icon">
+              <i class="ri-instagram-line"></i></div>
+            </div>
+
+          </div>
+          </div>
+        </div>
+      </div>
+    </section> <hr style="border: 2px solid red;">
+
+
+      <section>
+           <div class="footer_box">
+                     <div class="footer_box1">
+                        <div class="footer_boxA">
+                          
+                           <div class="footer_heading1">
+                                <h1>Ultras</h1> <br>
+                                <p>About us</p> <br>
+                                <p>Conditions</p><br>
+                                <p>Our Journals</p><br>
+                                <p>Careers</p><br>
+                                <p>Affiliate Programme</p><br>
+                                <p>Ultras Press</p><br>
+
+                           </div>
+
+                        </div>
+
+
+                        <div class="footer_boxB">
+
+                          <div class="footer_heading2">
+                            <h1>Customer Service</h1> <br>
+                            <p>FAQ </p> <br>
+                            <p>Contact</p><br>
+                            <p>Privacy Policy</p><br>
+                            <p>Returns & Refunds</p><br>
+                            <p> Cookie Guidelines</p><br>
+                            <p>Delivery Information</p><br>
+
+                       </div>
+
+
+
+
+                        </div>
+
+                        <div class="footer_boxC">
+
+                          <div class="footer_heading3">
+                            <h1>Contact Us</h1> <br>
+                            <p>Do you have any questions or <br> suggestions? </p> 
+                            <a><u>ourservices@ultras.com</u></a><br> <br>
+                            <p>Do you need assistance? Give us <br>a call.</p> <br>
+                            <h1>+523444411035</h2>
+
+                       </div>
+
+
+
+
+                        </div>
+
+                        <div class="footer_boxD">
+
+
+                          <div class="footer_heading4">
+                          <h1>Forever 2018</h1><br>
+                          <p>Cras mattis sit ornare in metus eu <br> amet adipiscing enim. <br> Ullamcorper in orci, ultrices <br> integer eget arcu. Consectetur <br> leo dignissim lacus, lacus sagittis  <br>dictumst.</p> <br>
+                          <i class="ri-facebook-line"></i>
+                          <i class="ri-twitter-line"></i>
+                          <i class="ri-youtube-line"></i>
+
+                          </div>
+ 
+                        </div> 
+
+
+                     </div> <hr>
+
+                     <h1>Freebies by <a href="https://templatesjungle.com/">Templates Jungle</a>  Distributed by <a href="https://themewagon.com/">ThemeWagon</a> </h1>
+                     
+           </div>
+      </section>
+  </body>
+</html>

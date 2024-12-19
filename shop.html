@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#shoesNike").click(function () {
+          $(".selling_products_box31").hide();
+          $(".selling_products_box32").hide();
+          $(".selling_products_box33").show();
+        });
+
+        $("#Tshirtshow").click(function () {
+          $(".selling_products_box32").hide();
+          $(".selling_products_box33").hide();
+          $(".selling_products_box31").show();
+        });
+
+        $("#pantsshow").click(function () {
+          $(".selling_products_box31").hide();
+          $(".selling_products_box33").hide();
+          $(".selling_products_box32").show();
+        });
+
+        $("#hoodieBtn").click(function () {
+          $(".selling_products_box32").hide();
+          $(".selling_products_box33").hide();
+          $(".selling_products_box31").show();
+        });
+
+        $("#outerBtn").click(function () {
+          $(".selling_products_box31").hide();
+          $(".selling_products_box32").hide();
+          $(".selling_products_box33").show();
+        });
+
+        $("#jacketBtn").click(function () {
+          $(".selling_products_box31").hide();
+          $(".selling_products_box33").hide();
+          $(".selling_products_box32").show();
+        });
+
+        $("#active").click(function () {
+          $(".selling_products_box31").show();
+          $(".selling_products_box32").show();
+          $(".selling_products_box33").show();
+        });
+
+        $("#homeLi").hover(function () {
+          $(".home-box").slideDown(500);
+        });
+
+        $("#homeLi").mouseleave(function () {
+          $(".home-box").slideUp(500);
+        });
+
+        $("#shopLi").hover(function () {
+          $(".shop-box").slideDown(800);
+        });
+
+        $("#shopLi").mouseleave(function () {
+          $(".shop-box").slideUp(900);
+        });
+
+        $("#pageLi").hover(function () {
+          $(".page-box").slideDown(800);
+        });
+
+        $("#pageLi").mouseleave(function () {
+          $(".page-box").slideUp(900);
+        });
+
+        $("#blogLi").hover(function () {
+          $(".blog-box").slideDown(800);
+        });
+
+        $("#blogLi").mouseleave(function () {
+          $(".blog-box").slideUp(900);
+        });
+      });
+    </script>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      .header-top {
+        width: 100%;
+        height: 50px;
+        /* background-color: blue; */
+      }
+
+      .header-content-box {
+        border-top: 2px solid rgb(80, 75, 75);
+        width: 100%;
+        height: 50px;
+        /* background-color: rgb(83, 226, 43); */
+        border-bottom: 2px solid rgb(80, 75, 75);
+        display: flex;
+      }
+
+      .header-heading1-box {
+        width: 33.33%;
+        height: 50px;
+      }
+
+      .header-heading1-box h2 {
+        margin-top: 10px;
+        margin-left: 50px;
+      }
+
+      .header-heading2-box {
+        width: 54.33%;
+        height: 50px;
+      }
+
+      .header-heading2-box h2 {
+        margin-top: 10px;
+        margin-left: 50px;
+      }
+
+      .header-heading3-box {
+        width: 13%;
+        height: 50px;
+      }
+
+      .icon {
+        margin-top: 10px;
+        width: 70%;
+        height: 40px;
+        font-size: 25px;
+        cursor: pointer;
+      }
+
+      header {
+        width: 100%;
+        height: 130px;
+        /* background-color: chartreuse; */
+        display: flex;
+      }
+
+      .logo {
+        width: 40%;
+        height: 130px;
+        /* background-color: blue; */
+      }
+
+      .logo img {
+        margin-left: 40px;
+        margin-top: 30px;
+      }
+
+      .nav {
+        width: 60%;
+        height: 130px;
+        /* background-color: blueviolet; */
+      }
+
+      .nav ul {
+        display: flex;
+        list-style: none;
+        margin-top: 50px;
+        font-size: 25px;
+      }
+      .nav ul li {
+        height: 60px;
+        margin: 10px 30px;
+        /* background-color: blueviolet; */
+      }
+      .nav ul li a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .home-box {
+        position: absolute;
+        top: 160px;
+        left: 590px;
+        width: 250px;
+        height: 130px;
+        background-color: rgb(5, 5, 5);
+        display: none;
+      }
+
+      .nav ul li a:hover {
+        color: rgb(54, 29, 198);
+      }
+
+      /* .nav ul li:hover .home-box {
+          display: block;
+        } */
+
+      .home-box h4 {
+        margin-left: 20px;
+        color: #fff;
+      }
+
+      .shop-box {
+        position: absolute;
+        top: 160px;
+        left: 870px;
+        width: 250px;
+        height: 450px;
+        background-color: rgb(5, 5, 5);
+        display: none;
+      }
+
+      .shop-box h4 {
+        margin-left: 20px;
+        color: #fff;
+      }
+
+      /* .nav ul li:hover .shop-box {
+          display: block;
+        } */
+
+      .page-box {
+        position: absolute;
+        top: 160px;
+        left: 990px;
+        width: 250px;
+        height: 400px;
+        background-color: rgb(5, 5, 5);
+        display: none;
+      }
+
+      .page-box h4 {
+        margin-left: 20px;
+        color: #fff;
+      }
+
+      /* .nav ul li:hover .page-box {
+          display: block;
+        } */
+
+      .blog-box {
+        position: absolute;
+        top: 160px;
+        left: 1150px;
+        width: 290px;
+        height: 250px;
+        background-color: rgb(5, 5, 5);
+        display: none;
+      }
+
+      .blog-box h4 {
+        margin-left: 20px;
+        color: #fff;
+      }
+
+      .shop_page_box {
+        width: 100%;
+        height: 500px;
+        background-image: url("Female img/hero-image (1).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 90px;
+
+
+        
+      }
+
+      .shop_page_box1{
+        margin-left: 50px;
+        width: 100%;
+        height: 400px;
+        /* background-color: rgb(134, 178, 178); */
+      }
+
+      .shop_page_box1 h1{
+          font-size: 150px;
+          margin-left: 300px;
+      }
+
+      .color{
+        width: 100%;
+        height: 900px;
+        background-color: cadetblue;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="header-top">
+      <div class="header-content-box">
+        <div class="header-heading1-box">
+          <h2>Let's talk! +57 444 11 00 35</h2>
+        </div>
+
+        <div class="header-heading2-box">
+          <h2>Free shipping on a purchase value of $200</h2>
+        </div>
+
+        <div class="header-heading3-box">
+          <div class="icon">
+            <i class="ri-user-line"></i>
+            <i class="ri-shopping-cart-line"></i>
+            <i class="ri-heart-line"></i>
+            <i class="ri-search-line"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="logo">
+        <img src="Female img/main-logo.png" alt="" />
+      </div>
+
+      <div class="nav">
+        <ul>
+          <li id="homeLi">
+            <a href="">Home<i class="ri-arrow-down-s-line"></i></a>
+            <div class="home-box">
+              <h4>Home</h4>
+              <br />
+              <h4>Home V2(PRO)</h4>
+            </div>
+          </li>
+          <li><a href="">About</a></li>
+          <li>
+            <a href="" id="shopLi"
+              >Shop <i class="ri-arrow-down-s-line"></i>
+            </a>
+            <div class="shop-box">
+              <h4>Shop</h4>
+              <br />
+              <h4>Shop Slider(PRO)</h4>
+              <br />
+              <h4>Shop Grid(PRO)</h4>
+              <br />
+              <h4>Shop List(PRO)</h4>
+              <br />
+              <h4>Single Product(PRO)</h4>
+              <br />
+              <h4>Cart(PRO)</h4>
+              <br />
+              <h4>Wishlist(PRO)</h4>
+              <br />
+              <h4>Check(PRO)</h4>
+              <br />
+            </div>
+          </li>
+
+          <li>
+            <a href="" id="pageLi">Pages<i class="ri-arrow-down-s-line"></i></a>
+
+            <div class="page-box">
+              <h4>Coming Soon(PRO)</h4>
+              <br />
+              <h4>Login(PRO)</h4>
+              <br />
+              <h4>FAQs(PRO)</h4>
+              <br />
+              <h4>Styles</h4>
+              <br />
+              <h4>Thankyou</h4>
+              <br />
+              <h4>Error Page(PRO)</h4>
+              <br />
+            </div>
+          </li>
+
+          <li>
+            <a href="" id="blogLi">Blog<i class="ri-arrow-down-s-line"></i></a>
+            <div class="blog-box">
+              <h4>Blog</h4>
+              <br />
+              <h4>Blog With Sidebar(PRO)</h4>
+              <br />
+              <h4>Blog Masonry(PRO)</h4>
+              <br />
+              <h4>Single Post</h4>
+              <br />
+            </div>
+          </li>
+
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section>
+      <div class="shop_page_box">
+            <div class="shop_page_box1">
+                 <h1>Shop Page</h1>
+            </div>
+      </div>
+
+      <div class="color"></div>
+    </section>
+  </body>
+</html>
